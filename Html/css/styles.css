@@ -1,0 +1,351 @@
+ html {
+     height: 100%;
+ }
+
+
+ /* Remove the navbar's default margin-bottom and rounded borders */
+ body {
+     font-family: 'Oxygen', sans-serif;
+     background-color: #e8eaf4b1;
+
+     min-height: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .mynavbar {
+     border-radius: 20px;
+     bottom: 20px;
+     color: rgba(126, 191, 235, 0.436);
+ }
+
+ .navbar-brand {
+     font-size: 25px;
+     margin-top: 10px;
+ }
+
+ .navbar-inverse {
+     background-color: #3454bb;
+ }
+
+ .navbar {
+     background-color: #2040ab;
+     margin-bottom: 0;
+     border-radius: 0;
+ }
+ #nav-list {
+     margin-top: 10px;
+ }
+
+ #nav-list a {
+     color: #767676;
+     text-align: center;
+ }
+
+ #nav-list a:hover {
+     background: #191038;
+ }
+
+ #nav-list a span {
+     font-size: 1.8em;
+ }
+
+ /* Home Page */
+ .jumbotron {
+     margin-bottom: 20px;
+     height: inherit;
+     padding: 0%;
+ }
+.container2 {
+    margin: 5rem;
+}
+ .row {
+     margin-top: 20px;
+ }
+
+ #Filling-tile,
+ #Feeding-tile,
+ #Lending-tile,
+ #Training-tile {
+     height: 250px;
+     width: 100%;
+     margin-bottom: 15px;
+     position: relative;
+     border: 2px solid #235571;
+     overflow: hidden;
+ }
+
+ #Filling-tile:hover,
+ #Feeding-tile:hover,
+ #Lending-tile:hover,
+ #Training-tile:hover {
+     box-shadow: 0 1px 5px 1px;
+ }
+
+ #Filling-tile {
+     background-image: url(/images/woman.png) no-repeat;
+     background-position: center;
+
+ }
+
+ #Feeding-tile {
+     background-image: url(School.png) no-repeat;
+     background-position: center;
+ }
+
+ #Lending-tile {
+     background-image: url(/images/Hand.png) no-repeat;
+     background-position: center;
+ }
+
+ #Training-tile {
+     background-image: url(/images/Chickens.jpg) no-repeat;
+     background-position: center;
+ }
+
+ .container2 {
+     position: relative;
+     width: 250px;
+ }
+
+ /* Make the image to responsive */
+ .img {
+     display: block;
+     width: 100%;
+     height: auto;
+ }
+
+ /* The overlay effect - lays on top of the container and over the image */
+ .overlay {
+     position: absolute;
+     bottom: 0;
+     background: rgb(0, 0, 0);
+     background: rgba(0, 0, 0, 0.5);
+     /* Black see-through */
+     color: #f1f1f1;
+     width: 100%;
+     transition: .5s ease;
+     opacity: 1;
+     color: white;
+     font-size: 20px;
+     padding: 20px;
+     text-align: center;
+ }
+
+ /* When you mouse over the container, fade in the overlay title */
+ .container2:hover .overlay {
+     opacity: 7;
+     background: rgba(23, 151, 171, 0.5);
+ }
+
+ /* Add a gray background color and some padding to the footer */
+ footer {
+     background-color: #5f6e99;
+     padding: 25px;
+     margin-top: 100px;
+ }
+
+ footer {
+     width: 100%;
+     bottom: 0%;
+     background: linear-gradient(to right, rgb(10, 10, 52), rgb(127, 183, 218));
+     color: #fff;
+     border: #2040ab;
+     border-radius: 50px;
+
+     font-size: 13px;
+     line-height: 15px;
+ }
+
+ .frow {
+     width: 90%;
+     margin: auto;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     justify-content: space-between;
+ }
+
+ .col {
+     flex-basis: 25%;
+     padding: 1px;
+     text-align: left;
+ }
+
+ .col :nth-child(2),
+ .col :nth-child(3) {
+     flex-basis: 15%;
+ }
+
+ .logo {
+     width: 200px;
+     margin-bottom: 0px;
+ }
+
+ .col h3 {
+     width: none;
+     margin-bottom: 40px;
+     position: relative;
+ }
+
+ .email-id {
+     width: fit-content;
+     border-bottom: 1px solid #ccc;
+     margin-bottom: 20px;
+ }
+
+ ul li {
+     list-style: none;
+     margin-bottom: 12px;
+ }
+
+ ul li a {
+     text-decoration: none;
+     color: #fff;
+ }
+
+ form {
+     padding-bottom: 15px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border-bottom: 1px solid #ccc;
+     margin-bottom: 50px;
+ }
+
+ form .far {
+     font-size: 18px;
+     margin-right: 10px;
+ }
+
+ form input {
+     width: 100%;
+     background: transparent;
+     color: #ccc;
+     border: 0;
+     outline: none;
+ }
+
+ form button {
+     background: transparent;
+     border: 0;
+     outline: none;
+     cursor: pointer;
+ }
+
+ form button .fas {
+     font-size: 16px;
+     color: #ccc;
+ }
+
+ .social-icons .fab {
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 20px;
+     font-size: 20px;
+     color: #000;
+     background: #fff;
+     margin-right: 15px;
+     cursor: pointer;
+ }
+
+ .underline {
+     width: 50%;
+     height: 5px;
+     background: #767676;
+     border-radius: 3px;
+     position: absolute;
+     position: center;
+     top: 25px;
+     left: 0;
+     overflow: hidden;
+ }
+
+ .underline span {
+     width: 15px;
+     height: 100%;
+     background: #fff;
+     border-radius: 3px;
+     position: absolute;
+     top: 0;
+     left: 10px;
+     animation: moving 2s linear infinite;
+ }
+
+ /* END HOME PAGE */
+
+ .category-tile {
+     position: relative;
+     border: 2px solid #030d10;
+     overflow: hidden;
+     width: 400px;
+     height: 400px;
+     margin: 20px auto 15px;
+
+ }
+
+ .category-tile span {
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     width: 100%;
+     text-align: center;
+     font-size: 2em;
+     text-transform: uppercase;
+     background-color: #000;
+     color: #f1f1f1;
+     opacity: .8;
+ }
+
+ #menu-categories-title+div {
+     margin-bottom: 50px;
+ }
+
+ @keyframes moving {
+     0% {
+         left: -20px;
+     }
+
+     100% {
+         left: 100%;
+     }
+ }
+
+ @media (max-width: 800px) {
+     footer {
+         bottom: unset;
+     }
+
+     .col {
+         flex-basis: 100%;
+         text-align: left;
+     }
+
+     .col :nth-child(2),
+     .col :nth-child(3) {
+         flex-basis: 100%;
+     }
+ }
+/*@media (max-width: 799px){
+    .underline {
+        display: none;
+    }
+ }*/
+ @media (max-width: 1200px) {}
+
+ @media (min-width: 992px) and (max-width: 1199px) {
+
+ }
+
+ @media (min-width: 0px) and (max-width: 928px) {
+     .underline {
+         display: none;
+     }
+ }
+ 
+ 
+
+
+ /*his is for food page*/
